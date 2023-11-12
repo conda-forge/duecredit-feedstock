@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - duecredit = duecredit.cmdline.main:main
 
@@ -24,7 +24,6 @@ requirements:
   run:
     - citeproc-py >=0.4
     - python >=3.8
-    - six
     - requests
 
 test:
