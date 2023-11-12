@@ -1,11 +1,11 @@
-About duecredit
-===============
+About duecredit-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/duecredit-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/duecredit/duecredit
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/duecredit-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automated collection and reporting of citations for used software/methods/datasets
 
