@@ -1,5 +1,5 @@
 {% set name = "duecredit" %}
-{% set version = "0.9.3" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/duecredit-{{ version }}.tar.gz
-  sha256: f8378ea90d11f9752592e487c92163da80d9a9ff39993eb83c08bf2ed4eca372
+  sha256: be5a787d35b1a44f1de27aa992c7cdda003e2fe4c0f451fae9a4cf5090de5050
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - duecredit = duecredit.cmdline.main:main
 
@@ -23,6 +23,8 @@ requirements:
     - setuptools >=61.0.0
   run:
     - citeproc-py >=0.4
+    - looseversion
+    - packaging
     - python >=3.8
     - requests
 
