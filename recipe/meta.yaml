@@ -1,5 +1,5 @@
 {% set name = "duecredit" %}
-{% set version = "0.10.2" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/duecredit-{{ version }}.tar.gz
-  sha256: fe73a20e4fbb2d972ba01edf37dec1b0ba1e646efe5ef4ccaf0c6724ca287d42
+  sha256: 7a2c3308da02e9d4cf4552ed69184e31dc34f33d1c2732914d230104cd8b0384
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - duecredit = duecredit.cmdline.main:main
 
